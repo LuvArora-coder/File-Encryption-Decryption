@@ -41,11 +41,16 @@
 		}
 
 		.dropzone {
-			border: 10px dashed rgb(0, 255, 191);
+			border: 10px dashed rgb(255, 123, 0);
 			width: 20%;
 			padding: 2% 2% 5% 2%;
 			text-align: center;
 			margin: 5px 0 5px 0;
+			background: url(lock.gif);
+ 			background-repeat: no-repeat;
+			background-origin: content-box;
+			background-size: 170px;
+			background-position: center;
 		}
 
 		.divTablefullwidth{
@@ -112,7 +117,7 @@
 
 		<div class="container" id=divEncryptfile>
 			<h2 class=a1>ENCRYPT FILE</h2>
-			<p class=a1>To encrypt a file, enter a password and drop the file to be encrypted into the dropzone below.  The file will then be encrypted using the password, then you'll be given an opportunity to save the encrypted file to your system.</p>
+			<p class=a1>ENCRYPTION OF FILE: Enter a password and drop the file to be encrypted into the dropzone below. The file will then be encrypted using the password and then save the encrypted file to your system.</p>
 
 			<div class="divTable">
 				<div class="divTableBody">
@@ -144,7 +149,7 @@
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell"><button class= button id=btnEncrypt onclick=javascript:encryptfile(); disabled>Encrypt File</button></div>
+						<div class="divTableCell"><button class= button id=btnEncrypt onclick=javascript:encryptfile(); disabled>ENCRYPT FILE</button></div>
 						<div class="divTableCell"><span id=spnEncstatus></span></div>
 					</div>
 				</div>
@@ -161,7 +166,7 @@
 
 		<div class="container" id=divDecryptfile>
 			<h2 class=a1>DECRYPT FILE</h2>
-			<p class=a1>Decrypt a file using the password that was previously used to encrypt the file.  After the file is decrypted, you'll be given an opportunity to save the decrypted file to your system.</p>
+			<p class=a1>DECRYPTION OF FILE: Using the password that was previously used to encrypt the file. The file is decrypted and you can save the decrypted file to your system.</p>
 
 			<div class="divTable">
 				<div class="divTableBody">
@@ -187,7 +192,7 @@
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell"><button class= button id=btnDecrypt onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
+						<div class="divTableCell"><button class= button id=btnDecrypt onclick=javascript:decryptfile(); disabled>DECRYPT FILE</button></div>
 						<div class="divTableCell"><span id=spnDecstatus></span></div>
 					</div>
 				</div>
