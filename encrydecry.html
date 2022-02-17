@@ -80,6 +80,10 @@
 		.a1 {
   			font-family: "Lucida Console", "Courier New", monospace;
 		}
+		.a2{
+			font-family: "Audiowide", sans-serif;
+		}
+
 	</style>	
 	<body>
 		<div class=container>
@@ -108,17 +112,17 @@
 
 		<div class="container" id=divEncryptfile>
 			<h2 class=a1>ENCRYPT FILE</h2>
-			<p>To encrypt a file, enter a password and drop the file to be encrypted into the dropzone below.  The file will then be encrypted using the password, then you'll be given an opportunity to save the encrypted file to your system.</p>
+			<p class=a1>To encrypt a file, enter a password and drop the file to be encrypted into the dropzone below.  The file will then be encrypted using the password, then you'll be given an opportunity to save the encrypted file to your system.</p>
 
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell">Password</div>
+						<div class="divTableCell">PASSWORD</div>
 						<div class="divTableCell"><input id=txtEncpassphrase type=password size=30 onkeyup=javascript:encvalidate(); value=''></div>
-						<div class="divTableCell">(minumum length eight characters, make sure it strong!)</div>
+						<div class="divTableCell">(MINIMUM LENGTH 8)</div>
 					</div>
 					<div class="divTableRow">
-						<div class="divTableCell">Password (retype)</div>
+						<div class="divTableCell">RETYPE PASSWORD</div>
 						<div class="divTableCell"><input id=txtEncpassphraseretype type=password size=30 onkeyup=javascript:encvalidate(); value=''></div>
 						<div class="divTableCell"><span class=greenspan id=spnCheckretype></span></div>
 					</div>
@@ -149,7 +153,7 @@
 			<p> </p>
 
 			<div>
-				<a id=aEncsavefile hidden><button class= button>Save Encrypted File</button></a>
+				<a id=aEncsavefile hidden><button class= button>SAVE ENCRYPTED FILE</button></a>
 			</div>
 		
 			<p> </p>
@@ -157,12 +161,12 @@
 
 		<div class="container" id=divDecryptfile>
 			<h2 class=a1>DECRYPT FILE</h2>
-			<p>Decrypt a file using the password that was previously used to encrypt the file.  After the file is decrypted, you'll be given an opportunity to save the decrypted file to your system.</p>
+			<p class=a1>Decrypt a file using the password that was previously used to encrypt the file.  After the file is decrypted, you'll be given an opportunity to save the decrypted file to your system.</p>
 
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell">Password</div>
+						<div class="divTableCell">PASSWORD</div>
 						<div class="divTableCell"><input id=txtDecpassphrase type=password size=30 onkeyup=javascript:decvalidate(); value=''></div>
 					</div>
 				</div>
@@ -192,7 +196,7 @@
 			<p> </p>
 
 			<div>
-				<a id=aDecsavefile hidden><button class= button>Save Decrypted File</button></a>
+				<a id=aDecsavefile hidden><button class= button>SAVE DECRYPTED FILE</button></a>
 			</div>
 		
 			<p> </p>
