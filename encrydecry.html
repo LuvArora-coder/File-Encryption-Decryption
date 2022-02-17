@@ -4,16 +4,78 @@
 		<meta charset="utf-8">
 		<title>File Encryption And Decryption</title>
 	</head>
-	
-	<style>.dropzone {
-		border: 10px dashed rgb(255, 0, 0);
-		width: 20%;
-		padding: 2% 2% 5% 2%;
-		text-align: center;
-		margin: 5px 0 5px 0;
-	}
-	</style>
+	<style>
+		body {
+	  		font-family: 'Helvetica', 'Arial', 'sans-serif'; 
+			color: black;
+			font-size: 11pt;		
+		}
 
+		a, a:link, a:visited, a:active {
+			color: blue;
+			text-decoration: underline;
+		}
+
+		a:hover {
+			cursor:pointer;
+			color: red;
+		}
+
+		.black10pointcourier {
+	  		font-family: 'courier'; 
+			color: black;
+			font-size: 10pt;		
+		}
+		.button {
+  			background-color: #4CAF50;
+  			color: rgb(255, 255, 255);
+			border: none;
+			padding: 15px 25px;
+			text-align: center;
+			display: inline-block;
+			font-size: 12px;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.dropzone {
+			border: 10px dashed rgb(0, 255, 191);
+			width: 20%;
+			padding: 2% 2% 5% 2%;
+			text-align: center;
+			margin: 5px 0 5px 0;
+		}
+
+		.divTablefullwidth{
+			display: table;
+			width: 100%;
+		}
+
+		.divTable{
+			display: table;
+		}
+
+		.divTableRow {
+			display: table-row;
+		}
+		.divTableCell {
+			display: table-cell;
+			padding: 3px 3px;
+		}
+		.divTableBody {
+			display: table-row-group;
+		}
+
+		.greenspan {
+			color: green;	  
+		}
+
+		.redspan {
+			color: red;	  
+		}
+	</style>	
 	<body>
 		<div class=container>
 			<div class="divTablefullwidth">
@@ -21,13 +83,12 @@
 					<div class="divTableRow">
 						<div class="divTableCell" style="float: left;">
 							<h1>File Encryption And Decryption</h1>
-							
 						</div>
 						<div class="divTableCell" style="float: right;">
 							<h1>
-							<button id="btnRefresh" onClick="javascript:location.reload();">Refresh Page</button>
-							<button id="btnDivEncrypt" onClick="javascript:switchdiv('encrypt');">Encrypt a File</button>
-							<button id="btnDivDecrypt" onClick="javascript:switchdiv('decrypt');">Decrypt a File</button>
+							<button class= button id="btnRefresh" onClick="javascript:location.reload();">RELOAD PAGE</button>
+							<button class= button id="btnDivEncrypt" onClick="javascript:switchdiv('encrypt');">ENCRYPT FILE</button>
+							<button class= button id="btnDivDecrypt" onClick="javascript:switchdiv('decrypt');">DECRYPT FILE</button>
 							</h1>
 						</div>
 					</div>
@@ -41,10 +102,8 @@
 		</div>
 
 		<div class="container" id=divEncryptfile>
-			<h2>=============</h2>
-			<p>===========
-				=============================================
-			</p>
+			<h2>Encrypt a File</h2>
+			<p>To encrypt a file, enter a password and drop the file to be encrypted into the dropzone below.  The file will then be encrypted using the password, then you'll be given an opportunity to save the encrypted file to your system.</p>
 
 			<div class="divTable">
 				<div class="divTableBody">
@@ -76,7 +135,7 @@
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell"><button id=btnEncrypt onclick=javascript:encryptfile(); disabled>Encrypt File</button></div>
+						<div class="divTableCell"><button class= button id=btnEncrypt onclick=javascript:encryptfile(); disabled>Encrypt File</button></div>
 						<div class="divTableCell"><span id=spnEncstatus></span></div>
 					</div>
 				</div>
@@ -85,7 +144,7 @@
 			<p> </p>
 
 			<div>
-				<a id=aEncsavefile hidden><button>Save Encrypted File</button></a>
+				<a id=aEncsavefile hidden><button class= button>Save Encrypted File</button></a>
 			</div>
 		
 			<p> </p>
@@ -119,7 +178,7 @@
 			<div class="divTable">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell"><button id=btnDecrypt onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
+						<div class="divTableCell"><button class= button id=btnDecrypt onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
 						<div class="divTableCell"><span id=spnDecstatus></span></div>
 					</div>
 				</div>
@@ -128,10 +187,11 @@
 			<p> </p>
 
 			<div>
-				<a id=aDecsavefile hidden><button>Save Decrypted File</button></a>
+				<a id=aDecsavefile hidden><button class= button>Save Decrypted File</button></a>
 			</div>
 		
 			<p> </p>
 		</div>
+		<BR>
 	</body>
 </html>
